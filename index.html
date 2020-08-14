@@ -1,13 +1,61 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>my first web page</title>
+    </head> 
+    <body>
+    	<!-- 1. text tags -->
+    	<!--<h1>this is h1</h1>
+        <h2>this is h2</h2>
+        <h3>this is h3</h3>
+        <h4>this is h4</h4>
+        <h5>this is h5</h5>
+        <h6>this is h6</h6>
+        <p>Lorem this is a domi text <br> kisi se lena dena ni h  </p>
+        <ul>
+        	<li>item 1</li>
+        	<li>item 2</li>
+        </ul>
+        <hr>
+        <ol>
+        	<li>item 1</li>
+        	<li>item 2</li>
+        </ol>
+        <!-- image -->
+        <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"> 
+        <!-- audio video-->
+       <!-- <audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio> -->
+<!-- advanced html-->
+<!--tables-->
+<table border="2">
+	<thead>
+	   <tr>
+		<th>Name</th>
+		<th>phone</th>
+		<th>email</th>
+	   </tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>arika</td>
+			<td>67298987874</td>
+			<td>ankkhh@gmail.com</td>
+		</tr>
+	</tbody>
+</table>
+<!--forms-->
+<form>
+	<label> enter email</label>
+	<input type="email" name="user_name" placeholder="enter email"><br>
+	<label>enter password</label>
+	<input type="password" name="user_password" placeholder="enter password"><br>
+	<input type="submit" name="">
+</form>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+
+    </body>
+
+</html>
